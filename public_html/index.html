@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<title>BuBle</title></title>
+<link rel="icon" href="icon">
+<link rel="stylesheet" href="stylelogin.css">
+<script>
+function loginmsg()
+{ var flag=true;
+if(document.getElementById('id').value==""||document.getElementById('id').value==null)
+{flag=false;
+document.getElementById('iderror').innerHTML="*Empty ID";
+document.getElementById('id').style.border="2px red solid";
+document.getElementById('iderror').style.color="#aa3388";
+
+}
+
+else
+{document.getElementById('iderror').innerHTML="";
+}
+
+if(document.getElementById('password').value==""||document.getElementById('password').value==null)
+{flag=false;
+document.getElementById('passerror').innerHTML="*Empty Password";
+document.getElementById('password').style.border="2px red solid";
+document.getElementById('passerror').style.color="#aa3388";
+}
+else
+{document.getElementById('passrror').innerHTML="";
+}
+return flag;
+}
+
+function signupmsg()
+{var flag=true;
+if(document.getElementById('Email').value==""||document.getElementById('Email').value==null)
+{flag=false;
+document.getElementById('Emailerror').innerHTML="*";
+document.getElementById('Email').style.border="2px red solid";
+document.getElementById('Emailerror').style.color="#aa3388";
+}
+else
+{document.getElementById('Emailerror').innerHTML="";
+}
+
+ if(document.getElementById('username').value==""||document.getElementById('username').value==null)
+{flag=false;
+document.getElementById('uerror').innerHTML="*";
+document.getElementById('username').style.border="2px red solid";
+document.getElementById('uerror').style.color="#aa3388";
+}
+else
+{document.getElementById('uerror').innerHTML="";
+}
+
+if(document.getElementById('ids').value==""||document.getElementById('ids').value==null)
+{flag=false;
+document.getElementById('ideerror').innerHTML="*";
+document.getElementById('ids').style.border="2px red solid";
+document.getElementById('ideerror').style.color="#aa3388";
+}
+else
+{document.getElementById('ideerror').innerHTML="";
+}
+
+if(document.getElementById('passwords').value==""||document.getElementById('passwords').value==null)
+{flag=false;
+document.getElementById('passeeror').innerHTML="*";
+document.getElementById('passwords').style.border="2px red solid";
+document.getElementById('passeeror').style.color="#aa3388";
+}
+else
+{document.getElementById('passeeror').innerHTML="";
+}
+
+return flag;
+}
+
+</script>
+
+</head>
+ <body bgcolor="#D3D3D3">
+    <div id="part">
+
+       <div id="header">
+			<h1 style="font-size:50px;color:#0000ff;text-align:center">BuBle</h1>
+
+			<div id="subheader">
+				<span style="font-size:20px;color:#3300ff">Blink U Biger Level!!</span>
+			</div>
+				<hr border="5px">
+		</div>
+
+		<div id="body">
+			<p style="font-size:22px;text-align:center;">You are FREE and always will be to VOTE TRUTH.</p>
+			<div id="login">
+				<form name="login" method="post" onsubmit="return loginmsg()" action="main.php">
+						<fieldset>
+							<legend>Login Details</legend>
+								<table>
+									<tr><td>Id</td><td><input type="text" name="id" id="id" placeholder="User id">
+									</td>
+									<td id="iderror"></td>
+									</tr>
+									<tr><td>Password</td><td><input type="password" name="password" id="password" placeholder="Password"></td>
+									<td id="passerror"></td>
+									</tr>
+									<tr>
+								<td></td>
+								<td><button type="Reset" value="Reset" style="background-color:#99aaff">Reset</button> <button type="submit" value="Submit" style="background-color:#99aaff">Submit</button></td>
+								</tr>
+								</table>
+						</fieldset>
+				</form>
+			</div>
+		</div>
+ 
+		<div id="side">
+			<div id="signup">
+				<form name="signup" method="post" onsubmit="return signupmsg()" action="signupphp.php">
+					<fieldset>
+						<legend>Signup Details</legend>
+						<br>
+							<table>
+								<tr><td>Email</td><td><input type="Email" name="Email" id="Email" placeholder="Email"><td id="Emailerror"></td></td></tr>
+								<tr><td>User name</td><td><input type="text" name="username" id="username" 	placeholder="User name"></td><td id="uerror"></td></tr>
+								<tr><td>Id</td><td><input type="text" name="ids" id="ids" placeholder="User id"></td><td id="ideerror"></td></tr>
+								<tr><td>Password</td><td><input type="password" name="passwords" id="passwords" placeholder="Password"></td><td id="passeeror"></td></tr>
+								<tr>
+								<td>Gender</td>
+								<td><input type="text" name="gen" id="m" placeholder="M\F"></td>
+								</tr>
+								<tr>
+								<td colspan="2"><input type="checkbox" name="t" id="t">Terms & Conditions</td>
+								</tr>
+								<tr></tr>
+								<tr>
+								<td></td>
+								<td><button type="Reset" value="Reset" style="background-color:#99aaff">Reset</button> <button type="submit" value="Submit" style="background-color:#99aaff">Submit</button></td>
+								</tr>
+							</table>
+					</fieldset>
+				</form>
+				<span
+				id="error"><?php echo $msg;?></span>
+			</div>
+
+		</div>
+
+
+		<div id="last">
+		<p style="color:#aa3388">* Field Empty</p>
+			<p style="text-align:center">Shobhit&copy2016</p>
+		</div>
+
+ 
+	</div>
+ 
+ 
+ 
+</body>
+</html>

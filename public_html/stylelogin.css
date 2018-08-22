@@ -1,0 +1,68 @@
+ #part{
+
+width:999px;
+height:550px;
+
+
+
+
+
+}
+#header{
+
+width:999px;
+height:100px;
+
+
+}
+
+#subheader{
+
+width:200px;
+height:40px;
+margin:-38px 550px;
+
+float:left;
+}
+#login{
+	width:380px;
+	height:140px;
+	float:left;
+	margin:60px 200px;
+
+	
+}
+#signup{
+	width:299px;
+	height:300px;
+	
+	float:right;
+}
+
+
+
+#body{
+height:400px;
+width:700px;
+background:#00aacc;
+float:left;
+border:1px solid;
+}
+
+#side{
+	height:400px;
+	width:199px;
+	float:right;
+	
+}
+
+
+
+
+#last{
+height:70px;
+width:999px;
+
+float:left;
+}
+
